@@ -1,4 +1,4 @@
-from .apis import non_cloud, cloud
+from .apis import cloud, non_cloud
 
 
 def get_worklogs_by_interval(data, start, end):

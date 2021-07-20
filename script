@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import os
 
+from src.args import arg_handler, get_args
 from src.utils import seconds_to_formated_hours
 from src.worklogs import get_worklogs_by_interval, get_worklogs_sum
 from src.yaml_parser import yaml_load
-from src.args import arg_handler, get_args
 
 config = yaml_load(os.path.join(os.path.dirname(__file__), "config.yaml"))
 

@@ -1,6 +1,7 @@
-from tempoapiclient import client
-import requests
 import json
+
+import requests
+from tempoapiclient import client
 
 
 def cloud(api_token, accountId):

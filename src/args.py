@@ -1,15 +1,20 @@
-from .utils import str_to_date_tuple, tuple_to_datestring, last_day_of_month
 from argparse import ArgumentParser
 from datetime import date
 
+from .utils import last_day_of_month, str_to_date_tuple, tuple_to_datestring
+
+
 def arg_handler():
     # Tool information
-    parser = ArgumentParser(prog="PyGressionTester",description= "A pythonic regression test tool")
+    parser = ArgumentParser(
+        prog="PyGressionTester", description="A pythonic regression test tool"
+    )
 
-    parser.add_argument('--from', '-f', action='store', dest='fromDate', required=True)
-    parser.add_argument('--to', '-t', action='store', dest='toDate', required=False)
+    parser.add_argument("--from", "-f", action="store", dest="fromDate", required=True)
+    parser.add_argument("--to", "-t", action="store", dest="toDate", required=False)
 
     return parser.parse_args()
+
 
 def get_args(args: ArgumentParser):
 
