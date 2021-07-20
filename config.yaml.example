@@ -1,0 +1,9 @@
+example:
+  cloud: False
+  url: https://jira.example.com
+  token: sampletokenabcd12345blablabla
+  worker_id: sampleworkerid1234
+example2:
+  cloud: True
+  token: sampletokenabcd12345blablabla
+  worker_id: sampleworkerid1234
